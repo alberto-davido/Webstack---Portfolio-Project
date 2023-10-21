@@ -2,7 +2,7 @@ from django.shortcuts import render
 import openai
 
 def generate_image(request):
-    api_key = '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'
+    api_key = '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'
     prompt = request.GET.get('prompt', 'Generate an image')
     size = request.GET.get('size', '512x512')
     num_images = 4
