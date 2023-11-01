@@ -28,6 +28,7 @@ from dalle_generator import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('generate-image/', views.generate_image, name='generate_image'),
+    
 ]
 
 

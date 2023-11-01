@@ -2,10 +2,10 @@ from django.shortcuts import render
 import openai
 
 def generate_image(request):
-    api_key = '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'
+    api_key = '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'
     prompt = request.GET.get('prompt', 'Generate an image')
     size = request.GET.get('size', '512x512')
-    num_images = 4
+    num_images = 3
 
     openai.api_key = api_key
 
@@ -26,3 +26,4 @@ def generate_image(request):
     except Exception as e:
         error_message = str(e)
         return render(request, 'dalle_generator/error.html', {'error_message': error_message})
+
