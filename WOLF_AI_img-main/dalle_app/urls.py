@@ -24,10 +24,14 @@ urlpatterns = [
 from django.contrib import admin
 from django.urls import path
 from dalle_generator import views
-
+from  import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('generate-image/', views.generate_image, name='generate_image'),
+
+     path('admin/', admin.site.urls),
+    path('profile/', views.profile, name='profile'),
+    
     
 ]
 
